@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montanari Flix</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MONTANARI<span>FLIX</span></div>
+
+        <div class="caixa-busca">
+
+            <input type="text" id="campo-busca" placeholder="Digite o nome de um filme...">
+            <button id="botao-busca">Buscar</button>
+
+        </div>
+
+        <nav>
+
+            <a href="#">Inicio</a>
+            <a href="#" id="menu-series">Series</a>
+            <a href="#" id="menu-filmes">Filmes</a>
+            <a href="#" id="menu-desenhos">Desenhos</a>
+
+        </nav>
+
+    </header>
+
+    <main class="banner-principal">
+
+        <div class="conteudo-banner">
+            <h2 class="titulo-destaque">O filme do ano</h2>
+            <p class="decricao-destaque">Confira o trailer oficial do mais novo lancamento</p>
+            <button class="botao-assistir">▶ Ver Trailer</button>
+        </div>
+
+    </main>
+
+    <section class="container-filmes">
+
+        <h3>Filmes Populares</h3>
+        
+        <div class="fileira-filmes">
+            <div class="capa-filme" id="filme-batman" data-filme="Batman">Batman</div>
+            <div class="capa-filme" id="filme-superman" data-filme="Superman">Superman</div>
+            <div class="capa-filme" id="filme-vingadores" data-filme="Vingadores">Vingadores</div>
+            <div class="capa-filme" id="filme-aranha" data-filme="Homem-Aranha">Homem-Aranha</div>
+            <div class="capa-filme" id="filme-ferro" data-filme="Iron Man">Homem de Ferro</div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

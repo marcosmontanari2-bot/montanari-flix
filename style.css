@@ -1,0 +1,262 @@
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+
+    background-color: #141414;
+    color: #ffffff;
+
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background-color: #000000;
+}
+
+header .logo {
+
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .logo span {
+    
+    color: #ffffff;
+}
+
+
+.caixa-busca {
+
+    display: flex;
+    gap: 5px;
+
+}
+
+#campo-busca {
+
+    padding: 8px 15px;
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    width: 250px;
+
+}
+
+#botao-busca {
+
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+
+}
+
+#botao-busca:hover {
+
+    background-color: #ff1e27;
+
+}
+
+header nav a {
+
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
+
+}
+
+header nav a:hover {
+
+    color: #b3b3b3;
+
+}
+
+
+.banner-principal {
+    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), 
+                      url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    }
+
+.conteudo-banner {
+
+    max-width: 600px;
+
+}
+
+.titulo-destaque {
+
+    font-size: 48px;
+    margin-bottom: 15px;
+
+}
+
+.decricao-destaque {
+
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.4
+
+}
+
+.botao-assistir {
+
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+
+.botao-assistir:hover {
+
+    background-color: #cccccc;
+
+}
+
+
+.container-filmes {
+
+    padding: 30px 4%;
+
+}
+
+.container-filmes h3 {
+
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.fileira-filmes {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+
+}
+
+.fileira-filmes::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+.capa-filme {
+
+    background-color: #333333;
+    min-width: 200px;
+    height: 140px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px; 
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.capa-filme:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+.capa-filme::after {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: -1; 
+
+}
+
+#filme-batman {
+
+    background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=500&q=80');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#filme-superman {
+
+    background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&q=80');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#filme-vingadores {
+
+    background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&q=80');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#filme-aranha {
+
+    background-image: url('https://images.unsplash.com/photo-1635805737707-575885ab0820?w=500&q=80');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#filme-ferro {
+
+    background-image: url('https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=500&q=80');
+    background-size: cover;
+    background-position: center;
+    
+}
